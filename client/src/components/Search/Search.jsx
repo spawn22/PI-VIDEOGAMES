@@ -9,10 +9,12 @@ const Search = () => {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
+    e.preventDefault();
     setName(e.target.value);
   };
 
   const handleClick = (e) => {
+    e.preventDefault();
     dispatch(get_videogames_name(name));
     setName("");
   };
@@ -20,13 +22,13 @@ const Search = () => {
   return (
     <div className="div_search">
       <input
-        onChange={handleChange}
+        onChange={e => handleChange(e)}
         type="text"
         className="nav_input_search"
         placeholder="Search"
         value={name}
       />
-      <button onClick={handleClick} className="div_search_btn" type="submit">
+      <button onClick={e => handleClick(e)} className="div_search_btn" type="submit">
         <FaSearch />
       </button>
     </div>

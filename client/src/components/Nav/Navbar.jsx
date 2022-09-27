@@ -36,7 +36,6 @@ import {
       dispatch(get_videogames())
       navigate("/videogames")
       
-      
   }
     const handleGenres = (e) => {
       dispatch(filter_by_genre(e.target.value));
@@ -67,7 +66,7 @@ import {
           </Link>
           </a>
           <Search/> 
-          <button onClick={handleClickreset} className="nav_select"> Reset </button>
+          <button onClick={(e) => handleClickreset(e)} className="nav_select"> Reset </button>
           <div className='nav_list'>
             <div className='nav_items'>
               <a href='#' className='nav_link'>

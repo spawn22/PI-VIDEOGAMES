@@ -10,12 +10,22 @@ const Paginated = ({ gamesPerPage, videogames, paginated }) => {
     return (
       <nav className="nav__paginated">
         <ul className="nav__paginated__ul">
-          {pageNumbers &&
-            pageNumbers.map((n) => (
+        {
+          pageNumbers?.map( number => {
+            return(
+                  <li key={number}>
+                    <button onClick={()=> paginated(number)}>{number}</button>
+                  </li>
+
+                        )
+                    })
+                }
+          {/* {
+            pageNumbers?.map((n) => (
               <li key={n}>
                 <button onClick={() => paginated(n)}>{n}</button>
               </li>
-            ))}
+            ))} */}
         </ul>
       </nav>
     );

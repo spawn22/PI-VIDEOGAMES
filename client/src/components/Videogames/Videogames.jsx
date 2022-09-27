@@ -1,7 +1,6 @@
 import { get_videogames } from "../../redux/action";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Loading from "../Loading/Loading";
 import Navbar from "../Nav/Navbar";
 import Paginated from "../Paginated/Paginated";
 import Videogame from "../Videogame/Videogame"
