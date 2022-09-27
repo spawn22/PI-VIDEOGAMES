@@ -1,0 +1,38 @@
+.conteiner {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-image: url("../../img/background\ 3.jpg");
+    background-attachment: fixed;
+    overflow-y: scroll;
+    
+    
+  }
+  
+.conteiner::-webkit-scrollbar{
+  display: none;
+}
+  
+.section_games {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    
+  }
+  
+  .loadingDetail{
+    position: absolute;
+    right: 670px;
+    justify-content: center;
+    color: rgb(239, 239, 242);
+    font-size: 5rem;
+  }  
+  
+
+   

@@ -1,0 +1,35 @@
+.nav__paginated {
+  width: 60%;
+  margin: auto;
+  margin: 20px -100px -10px 0;
+  display: block;
+}
+
+.nav__paginated .nav__paginated__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__paginated .nav__paginated__ul button {
+  margin: 0 3px;
+  padding: 7px; 
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  color: #ccc;
+  font-weight: 600;
+  box-shadow: 0 0 2px rgb(145, 143, 143);
+}
+
+.nav__paginated .nav__paginated__ul button:hover {
+  padding: 8px;
+}
+
+@media screen and (min-width: 850px) {
+  .nav__paginated {
+    width: 100%;
+  }
+}
